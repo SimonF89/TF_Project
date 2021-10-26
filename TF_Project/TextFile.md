@@ -1,4 +1,5 @@
 ﻿# Offene Punkte
+- HTMLEditor Store anpassen
 - [ ] manifest.json anpassen
 - index.html
   - Main difference

@@ -27,6 +27,7 @@
 
   <ItemGroup>
     <None Remove="ClientApp\src\components\widgets\htmleditor.tsx" />
+    <None Remove="ClientApp\src\store\HTMLEditor.ts" />
   </ItemGroup>
 
   <ItemGroup>
