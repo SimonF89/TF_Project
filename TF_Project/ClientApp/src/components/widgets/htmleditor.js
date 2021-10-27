@@ -12,13 +12,15 @@ var HtmlEditor = function (props) {
     // The sunEditor parameter will be set to the core suneditor instance when this function is called
     var getSunEditorInstance = function (sunEditor) {
         editor.current = sunEditor;
-        editor.current.getContents;
+    };
+    var handleChange = function (content) {
+        console.log(content + "lol"); //Get Content Inside Editor
     };
     return (React.createElement("div", null,
         React.createElement("p", null, " My Other Contents "),
         React.createElement(suneditor_react_1.default, { getSunEditorInstance: getSunEditorInstance, lang: "de", name: "HTML-Editor", setAllPlugins: true, setOptions: {
                 buttonList: suneditor_react_1.buttonList.complex
-            } })));
+            }, onChange: handleChange })));
 };
 //export default HtmlEditor;
 exports.default = (0, react_redux_1.connect)(function (state) { return state.counter; }, HTMLEditorStore.actionCreators)(HtmlEditor);
